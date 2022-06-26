@@ -124,7 +124,7 @@ def main(name:str, loc:str):
                         print("\n")
                         non = Prompt.ask("[PRESS ENTER]")
                         main(name, loc)
-                    if age < 20:
+                    elif age < 20:
                         quote = random.choice(b20)
                         print("[green]-----------------------[/green]")
                         print(quote)
@@ -143,7 +143,7 @@ def main(name:str, loc:str):
 
                         non = Prompt.ask("[PRESS ENTER]")
                         main(name, loc)
-                    if age < 30:
+                    elif age < 30:
                         quote = random.choice(b30)
                         print("[blue]-----------------------[/blue]")
                         print(quote)
@@ -162,7 +162,7 @@ def main(name:str, loc:str):
 
                         non = Prompt.ask("[PRESS ENTER]")
                         main(name, loc)
-                    if age < 40:
+                    elif age < 40:
                         quote = random.choice(b40)
                         print("[red]-----------------------[/red]")
                         print(quote)
@@ -181,7 +181,7 @@ def main(name:str, loc:str):
 
                         non = Prompt.ask("[PRESS ENTER]")
                         main(name, loc)
-                    if age < 50:
+                    elif age < 50:
                         quote = random.choice(b50)
                         print("-----------------------")
                         print(quote)
@@ -200,7 +200,7 @@ def main(name:str, loc:str):
 
                         non = Prompt.ask("[PRESS ENTER]")
                         main(name, loc)
-                    if age < 60:
+                    elif age < 60:
                         print("[yellow]You keep living, but barely, with no family or kids.")
                         non = Prompt.ask("[PRESS ENTER]")
                         main(name, loc)
@@ -384,6 +384,9 @@ if "L" in choice:
             names.append(char[0])
     print("[yellow]Current saved characters:[/yellow]\n")
     print("\n".join(names))
+    if names == []:
+        print("There are no saved characters. Do [red]CTRL + C[/red] to [blue]quit[/blue] and [yellow]start the game again.[/yellow]")
+
     pick = Prompt.ask("--->", choices=names)
     charloc = Character(pick)
     main(pick, charloc.loc)
