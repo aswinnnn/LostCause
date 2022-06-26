@@ -5,6 +5,8 @@
 
 Made for SimpliHacks 2.0 [2022] by Aswin.
 
+![What you'll see when you open the game](https://media.discordapp.net/attachments/672628098931490847/990602105603645460/lostcus_3.png)
+
 
 
 # ⚙️ Installation
