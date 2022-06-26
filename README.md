@@ -11,7 +11,7 @@ Made for SimpliHacks 2.0 [2022] by Aswin.
 - installed via `git clone`
 - coming soon on `pip`
 ```
-git clone https://github.com/aswinnnn/lostcause.git
+git clone https://github.com/aswinnnn/LostCause.git
 ```
 - go to `LostCause` folder and:
 ```
